@@ -3,55 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <style>
-    * {
-	      margin: 0;
-	      padding: 0;
-	      box-sizing: border-box;
-      }
-
-      .navigation {
-        background-color: #danger;
-      }
-
-      .navigation .navbar-brand {
-        color: #fff;
-        font-weight: bold;
-      }
-
-      .navigation .nav-link {
-        color: #fff;
-        padding: 10px 15px;
-      }
-
-      .navigation .nav-link:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-      }
-
-      .adverts .carousel-item {
-        height: 400px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      .container {
-        padding: 20px;
-      }
-  </style>
+    <title>International Fundraising</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #dc3545;
+        }
+        .navbar-brand {
+            color: #fff;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+        .content-section {
+            padding: 50px 0;
+        }
+        .content-section p, .content-section ul {
+            font-size: 1.2em;
+        }
+        .content-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .content-section ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        .content-section ul li::before {
+            content: '✔️';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+        }
+        footer ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        footer ul li a {
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
   <section class="navigation">
-     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid bg-danger">
+     <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#"><strong>INTERNATIONAL FUNDRAISING</strong></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -62,10 +81,10 @@
               <a class="nav-link" href="#">Events</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-disabled="true">Entertainment</a>
+              <a class="nav-link" href="#">Entertainment</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-disabled="true">Contacts</a>
+              <a class="nav-link" href="#">Contacts</a>
             </li>
           </ul>
         </div>
@@ -73,5 +92,40 @@
     </nav> 
   </section>
 
-  </body>
+  <section class="adverts">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Website Content/New Event/poster1_1.jpg" class="d-block w-100" alt="Global Heritage Day poster1">
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <p>Join us for a vibrant celebration of diversity of different cultures! Our Heritage Day, themed "God of in Nations," promises a day of fun, culture, and unity. We invite all Guta Ra Mwari members — all different age groups to participate in this exciting competition and showcase their creativity.</p>
+      <p>Get ready to:</p>
+      <ul>
+        <li>Design and wear stunning traditional attire from a country of your choice.</li>
+        <li>Cook and share mouthwatering traditional dishes from your chosen country.</li>
+        <li>Or even better, do both!</li>
+      </ul>
+      <p>Let’s celebrate our heritage with joy and enthusiasm. The best part? All proceeds will go towards building the Centenary Museum and the Holy Shrine Canopy in Nyazura.<br> 
+      <strong>Don't miss out on this exciting event filled with cultural exchanges, delicious food, and beautiful attire!</strong></p>
+    </div>
+  </section>
+
+  <!--
+  <footer>
+    <ul>
+      <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+      <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+      <li><a href="#"><i class="fa fa-snapchat-square fa-2x"></i></a></li>
+    </ul>
+  </footer>
+  -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 </html>
